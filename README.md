@@ -12,3 +12,5 @@ Cuando abra el backend, el sistema tendrá las siguientes características princ
  
 
 
+
+# soportetecnico
