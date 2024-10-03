@@ -38,3 +38,5 @@ Se añade el Diagrama de Flujo:
 
 Se añade el Diagrama UML ![UML](https://github.com/user-attachments/assets/089df4a3-a7b6-4c48-96ec-112a0dadfdbd)
 
+
+# soportetecnico
