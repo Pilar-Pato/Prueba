@@ -9,7 +9,7 @@ public class CreateDataBase {
     public static void createUsersTable() {
         String sqlCreateTable = "CREATE TABLE IF NOT EXISTS users ("
                 + "id_user INT PRIMARY KEY AUTO_INCREMENT, "
-                + // Cambié IDENTITY por AUTO_INCREMENT
+                + 
                 "nombre_user VARCHAR(255) NOT NULL, "
                 + "password VARCHAR(255) NOT NULL, "
                 + "es_tecnico BOOLEAN NOT NULL)";
@@ -20,7 +20,7 @@ public class CreateDataBase {
     public static void createTecnicosTable() {
         String sqlCreateTableTecnicos = "CREATE TABLE IF NOT EXISTS Tecnicos ("
                 + "id_tecnico INT PRIMARY KEY AUTO_INCREMENT, "
-                + // Cambié IDENTITY por AUTO_INCREMENT
+                + 
                 "cargo VARCHAR(255), "
                 + "correo VARCHAR(255) NOT NULL UNIQUE, "
                 + "id_user INT, "
@@ -32,7 +32,7 @@ public class CreateDataBase {
     public static void createClientesTable() {
         String sqlCreateTableClientes = "CREATE TABLE IF NOT EXISTS Clientes ("
                 + "id_cliente INT PRIMARY KEY AUTO_INCREMENT, "
-                + // Cambié IDENTITY por AUTO_INCREMENT
+                + 
                 "direccion VARCHAR(255), "
                 + "telefono VARCHAR(20), "
                 + "id_user INT, "
@@ -44,8 +44,7 @@ public class CreateDataBase {
     public static void createIncidenciasTable() {
         String sqlCreateTableIncidencias = "CREATE TABLE IF NOT EXISTS Incidencias ("
                 + "id_incidencia INT PRIMARY KEY AUTO_INCREMENT, "
-                + // Cambié IDENTITY por AUTO_INCREMENT
-                "id_cliente INT NOT NULL, "
+                + "id_cliente INT NOT NULL, "
                 + "id_tecnico INT, "
                 + "fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "
                 + "titulo VARCHAR(255) NOT NULL, "

@@ -27,7 +27,7 @@ public class DataOperationsUtils {
             Connection connection = DataBaseConnection.getConnection(); 
             PreparedStatement pstmt = connection.prepareStatement(sqlInsert)) {
             pstmt.setInt(1, id_cliente);
-            pstmt.setObject(2, id_tecnico); // Permitir valores nulos
+            pstmt.setObject(2, id_tecnico); 
             pstmt.setString(3, titulo);
             pstmt.setString(4, descripcion);
             pstmt.executeUpdate();

@@ -11,7 +11,7 @@ public class DataBaseConnection {
     private static final String USER = "sa";
     private static final String PASSWORD = "";
 
-    // Método para iniciar el servidor H2
+    
     public static void startServer() {
         try {
             Server.createTcpServer().start();
@@ -21,7 +21,7 @@ public class DataBaseConnection {
         }
     }
 
-    // Método para conectarse a la base de datos
+    
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
