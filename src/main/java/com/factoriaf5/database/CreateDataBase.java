@@ -9,8 +9,7 @@ public class CreateDataBase {
     public static void createUsersTable() {
         String sqlCreateTable = "CREATE TABLE IF NOT EXISTS users ("
                 + "id_user INT PRIMARY KEY AUTO_INCREMENT, "
-                + 
-                "nombre_user VARCHAR(255) NOT NULL, "
+                + "nombre_user VARCHAR(255) NOT NULL, "
                 + "password VARCHAR(255) NOT NULL, "
                 + "es_tecnico BOOLEAN NOT NULL)";
 
@@ -20,8 +19,7 @@ public class CreateDataBase {
     public static void createTecnicosTable() {
         String sqlCreateTableTecnicos = "CREATE TABLE IF NOT EXISTS Tecnicos ("
                 + "id_tecnico INT PRIMARY KEY AUTO_INCREMENT, "
-                + 
-                "cargo VARCHAR(255), "
+                + "cargo VARCHAR(255), "
                 + "correo VARCHAR(255) NOT NULL UNIQUE, "
                 + "id_user INT, "
                 + "FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE CASCADE)";
@@ -32,8 +30,7 @@ public class CreateDataBase {
     public static void createClientesTable() {
         String sqlCreateTableClientes = "CREATE TABLE IF NOT EXISTS Clientes ("
                 + "id_cliente INT PRIMARY KEY AUTO_INCREMENT, "
-                + 
-                "direccion VARCHAR(255), "
+                + "direccion VARCHAR(255), "
                 + "telefono VARCHAR(20), "
                 + "id_user INT, "
                 + "FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE CASCADE)";
@@ -67,15 +64,14 @@ public class CreateDataBase {
         }
     }
 
-   /* public static void main(String[] args) {
+    /* public static void main(String[] args) {
         createUsersTable();
         createTecnicosTable();
         createClientesTable();
         createIncidenciasTable();
 
         insertInitialData();
-    }*/ 
-
+    }*/
     public static void insertInitialData() {
         DataOperationsUtils.insertUser("Cristina", "1234", true);
         DataOperationsUtils.insertUser("Erika", "3456", false);
@@ -88,9 +84,9 @@ public class CreateDataBase {
         DataOperationsUtils.insertCliente("Calle Alegría 25", "555098766", 1);
         DataOperationsUtils.insertCliente("Paseo del Pato 1", "555012243", 2);
 
-        DataOperationsUtils.insertIncidencia(1, 1, "Ayuda, se me rompió el ratón", "Ratón averiado");
-        DataOperationsUtils.insertIncidencia(2, null, "Problema WiFi", "Poca señal WiFi");
-        DataOperationsUtils.insertIncidencia(3, 2, "Batería rota", "Me explotó la batería del móvil");
+        DataOperationsUtils.insertIncidencia(1, 1, "Ayuda, se me rompio el raton", "Raton averiado");
+        DataOperationsUtils.insertIncidencia(2, 2, "Problema WiFi", "Poca señal WiFi");
+        DataOperationsUtils.insertIncidencia(2, 2, "Bateria rota", "Me exploto la bateria del movil");
 
     }
 }
