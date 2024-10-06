@@ -9,13 +9,14 @@ import com.factoriaf5.database.DataBaseConnection;
  */
 public class App {
 
+    //Solo funciona dandole a Debug main no se porqué
     public static void main(String[] args) {
         DataBaseConnection.startServer();
 
         CreateDataBase.createUsersTable();
-        CreateDataBase.createClientesTable();        
-        CreateDataBase.createTecnicosTable();      
-        CreateDataBase.createIncidenciasTable();  
+        CreateDataBase.createClientesTable();
+        CreateDataBase.createTecnicosTable();
+        CreateDataBase.createIncidenciasTable();
 
         CreateDataBase.insertInitialData();
     }
