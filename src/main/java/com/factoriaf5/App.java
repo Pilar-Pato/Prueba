@@ -1,6 +1,5 @@
 package com.factoriaf5;
 
-import com.factoriaf5.database.CreateDataBase;
 import com.factoriaf5.database.DataBaseConnection;
 
 /**
@@ -11,11 +10,12 @@ public class App {
 
     public static void main(String[] args) {
         DataBaseConnection.startServer();
-        CreateDataBase.createClientesTable();
+        
+       /*  CreateDataBase.createClientesTable();
         CreateDataBase.createIncidenciasTable();
         CreateDataBase.createTecnicosTable();
         CreateDataBase.createUsersTable();
 
-        CreateDataBase.insertInitialData();
+        CreateDataBase.insertInitialData();*/
     }
 }
