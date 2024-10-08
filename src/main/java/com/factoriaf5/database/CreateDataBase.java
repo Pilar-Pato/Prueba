@@ -74,19 +74,26 @@ public class CreateDataBase {
     }*/
     public static void insertInitialData() {
         DataOperationsUtils.insertUser("Cristina", "1234", true);
+        System.out.println("Usuario Cristina insertado correctamente y su password ");
         DataOperationsUtils.insertUser("Erika", "3456", false);
+        System.out.println("Usuario Erika insertado correctamente y su password ");
         DataOperationsUtils.insertUser("Travis", "4321", false);
+        System.out.println("Usuario Travis insertado correctamente y su password ");
         DataOperationsUtils.insertUser("Taylor", "1313", true);
-
+        System.out.println("Usuario insertado correctamente y su password ");
         DataOperationsUtils.insertTecnico("Soporte Técnico", "cris.pf@soptec.com", 1);
+        System.out.println("Tecnico insertado correctamente con email ");
         DataOperationsUtils.insertTecnico("Soporte Técnico", "erika.gg@soptec.com", 2);
-
+        System.out.println("Tecnico insertado correctamente con email " + 2);
         DataOperationsUtils.insertCliente("Calle Alegría 25", "555098766", 1);
+        System.out.println("Cliente insertado con su dirección : Calle Alegría 25- tfno 555098766"+  1);
         DataOperationsUtils.insertCliente("Paseo del Pato 1", "555012243", 2);
-
+        System.out.println("Cliente Erika insertado con su dirección : Calle Alegría 25- tfno 555098766"+  1);
         DataOperationsUtils.insertIncidencia(1, 1, "Ayuda, se me rompio el raton", "Raton averiado");
+        System.out.println("Incidencia creada con Cliente 1, id_tecnico 1, con su titulo e descripción ");
         DataOperationsUtils.insertIncidencia(2, 2, "Problema WiFi", "Poca señal WiFi");
+        System.out.println("Incidencia creada con Cliente 2, id_tecnico 2, con su titulo e descripción ");
         DataOperationsUtils.insertIncidencia(2, 2, "Bateria rota", "Me exploto la bateria del movil");
-
+        System.out.println("Incidencia creada con Cliente 2, id_tecnico 2, con su titulo e descripción ");
     }
 }
