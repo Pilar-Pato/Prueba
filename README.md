@@ -16,3 +16,5 @@ Cuando abra el backend, el sistema tendrá las siguientes características princ
  - 3- Seguimiento de Solicitudes: El equipo técnico puede marcar las solicitudes como completadas y llevar un registro de la asistencia brindada.
    
  - 4- API REST: la aplicación está diseñada como una API que puede ser consumida por cualquier interfaz de usuario o cliente externo.
+
+
