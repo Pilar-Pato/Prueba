@@ -20,4 +20,6 @@ public class App {
 
         CreateDataBase.insertInitialData();
     }
+
+    //createIncidenciasTable.insertIncidencia("");
 }

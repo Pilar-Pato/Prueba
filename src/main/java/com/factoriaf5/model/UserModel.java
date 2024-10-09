@@ -1,23 +1,33 @@
 package com.factoriaf5.model;
 
 public class UserModel {
-    private String nameUser;
+    private int id_user;
+    private String nombre_user;
     private int password;
 
-    public UserModel(String nameUser, int password) {
-        this.nameUser = nameUser;
+    public UserModel(int id_user, String nombre_user, int password) {
+        this.nombre_user = nombre_user;
         this.password = password;
+        this.id_user = id_user;
     }
 
-    public String getNameUser() {
-        return nameUser;
+    public int getId(){
+        return id_user;
+    }
+
+    public void setId_user(int id_user){
+        this.id_user = id_user;
+    }
+    
+    public String getNombre_user() {
+        return nombre_user;
 }
 
-    public void setNameUser(String nameUser){
-        this.nameUser = nameUser;
+    public void setNombre_user(String nombre_user){
+        this.nombre_user = nombre_user;
 }
 
-    public int password(int password) {
+    public int getPassword(int password) {
         return password;
     }
 
@@ -25,7 +35,7 @@ public class UserModel {
         this.password = password;
     }
 
-    public boolean login(int password) {
-        return this.password == password;
+    public boolean login(String nombreUser, int password) {
+        return this.nombre_user.equals(nombreUser) && this.password == password;
     }
 }
