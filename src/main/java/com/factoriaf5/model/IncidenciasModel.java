@@ -20,7 +20,7 @@ public class IncidenciasModel {
         this.estado = estado;
     }
 
-//public IncidenciasModel() {
+
     public int getIdIncidencia() {
         return idIncidencia;
     }
@@ -81,7 +81,3 @@ public class IncidenciasModel {
 
 }
 
-/*public void setIdIncidencia(int int) {
-    
-    throw new UnsupportedOperationException("Unimplemented method 'setIdIncidencia'");
-} */

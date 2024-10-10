@@ -41,7 +41,7 @@ public class DataOperationsUtils {
             System.err.println("Error insertando incidencia: " + e.getMessage());
         }
     }
-    // Obtener todas las personas de la base de datos
+    
     public static List<IncidenciasModel> getAllIncidencias() {
         List<IncidenciasModel> incidencias = new ArrayList<>();
         String sql = "SELECT * FROM Incidencias";
@@ -49,7 +49,6 @@ public class DataOperationsUtils {
             PreparedStatement pstmt = connection.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery()) {
 
-    // String idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado
 
             while (rs.next()) {
                 IncidenciasModel incidencia = new IncidenciasModel(0, null, sql, sql, null, sql);
@@ -66,7 +65,7 @@ public class DataOperationsUtils {
 
                 System.out.println("Listado de incidencias:");
                 for (IncidenciasModel incidencia : incidencias) {
-                    System.out.println(incidencia); // Asegúrate de que toString() esté implementado
+                    System.out.println(incidencia);
                 }
             } catch(SQLException e) {
                 System.err.println("Error al listar las incidencias: " + e.getMessage());
@@ -77,24 +76,6 @@ public class DataOperationsUtils {
                 return incidencias;                 
                 
                 }
-
-
-            /*
-             *             
-                int idIncidencia = rs.getInt("idIncidencia");
-                Date fechaCreacion = rs.getDate("fechaCreacion");
-                String descripcion = rs.getString("descripcion");
-                String titulo = rs.getString("titulo");
-                Date fechaCierre = rs.getDate("fechaCierre");
-                String estado = rs.getString("estado");                
-            }
-            System.out.println("Todas las incidencias recuperadas: " + incidencias);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return incidencias;
-    } */
-
 
     private static void executeInsert(String sqlInsert, Object... params) {
         try (
