@@ -20,3 +20,5 @@ Se añade el Diagrama de Flujo:
 
 Se añade el Diagrama UML ![UML](https://github.com/user-attachments/assets/089df4a3-a7b6-4c48-96ec-112a0dadfdbd)
 
+Presentación del proyecto: https://www.canva.com/design/DAGSUK3ddoE/E8slrlwcT_vI75S0vlzUow/edit?utm_content=DAGSUK3ddoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
