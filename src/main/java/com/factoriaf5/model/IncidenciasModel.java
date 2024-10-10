@@ -81,4 +81,16 @@ public String toString() {
             '}';
 }
 
+
+public void setIdIncidencia(int int1) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'setIdIncidencia'");
+}
+
+
+public void setId_incidencia(int int1) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'setId_incidencia'");
+}
+
 }

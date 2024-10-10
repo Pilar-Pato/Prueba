@@ -49,9 +49,44 @@ public class DataOperationsUtils {
         try (Connection connection = DataBaseConnection.getConnection();
             PreparedStatement pstmt = connection.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery()) {
+
     // String idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado
 
             while (rs.next()) {
+                IncidenciasModel incidencia = new IncidenciasModel(sql, null, sql, sql, null, sql);
+                incidencia.setId_incidencia(rs.getInt("id_incidencia"));
+                incidencia.setFechaCreacion(rs.getDate("FechaCreacion"));
+                incidencia.setDescripcion(rs.getString("descripcion"));
+                incidencia.setTitulo(rs.getString("Titulo"));
+                incidencia.setFechaCierre(rs.getDate("FechaCierre"));
+                incidencia.setEstado(rs.getString("Estado"));
+
+                incidencias.add(incidencia);
+
+                }
+
+                System.out.println("Listado de incidencias:" + incidencias.size());
+                /* 
+            } cath(SQLException exception) {
+                    e.printStackTrace();
+                }
+                */
+
+                return incidencias;                 
+                
+                }
+
+
+
+
+
+
+
+
+
+
+            /*
+             *             
                 int idIncidencia = rs.getInt("idIncidencia");
                 Date fechaCreacion = rs.getDate("fechaCreacion");
                 String descripcion = rs.getString("descripcion");
@@ -64,7 +99,8 @@ public class DataOperationsUtils {
             e.printStackTrace();
         }
         return incidencias;
-    }
+    } */
+
 
     private static void executeInsert(String sqlInsert, Object... params) {
         try (

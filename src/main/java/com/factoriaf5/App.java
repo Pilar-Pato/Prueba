@@ -25,8 +25,17 @@ public class App {
         CreateDataBase.insertInitialData();
 
 // Get and display all incidencias
-getAllIncidencias();
+DataOperationsUtils.getAllIncidencias();
 }
+}
+
+/*
+ * 
+ 
+
+
+
+
 
 private static void getAllIncidencias() {
     List<IncidenciasModel> incidencias = DataOperationsUtils.getAllIncidencias();
@@ -55,3 +64,4 @@ private static void getAllIncidencias() {
     //  this.idIncidencia = idIncidencia;this.fechaCreacion = fechaCreacion;this.descripcion = descripcion;this.titulo = titulo; this.fechaCierre = fechaCierre; this.estado = estado;
     //createIncidenciasTable.insertIncidencia("");
 
+ */
