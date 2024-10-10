@@ -64,8 +64,10 @@ public class DataOperationsUtils {
 
                 }
 
-                System.out.println("Listado de incidencias:" + incidencias.toString());
-                
+                System.out.println("Listado de incidencias:");
+                for (IncidenciasModel incidencia : incidencias) {
+                    System.out.println(incidencia); // Asegúrate de que toString() esté implementado
+                }
             } catch(SQLException e) {
                 System.err.println("Error al listar las incidencias: " + e.getMessage());
                     e.printStackTrace();
