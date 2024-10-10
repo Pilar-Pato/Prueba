@@ -49,11 +49,7 @@ public class DataOperationsUtils {
             PreparedStatement pstmt = connection.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery()) {
 
-<<<<<<< HEAD
     
-=======
-
->>>>>>> cb2aacdf3fc6b0848ab78ac4ef94e0a40e6f276f
             while (rs.next()) {
                 IncidenciasModel incidencia = new IncidenciasModel(0, null, sql, sql, null, sql);
                 incidencia.setIdIncidencia(rs.getInt("id_incidencia"));
