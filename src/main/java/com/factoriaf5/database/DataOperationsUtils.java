@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import com.factoriaf5.model.IncidenciasModel;
@@ -53,8 +52,8 @@ public class DataOperationsUtils {
     // String idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado
 
             while (rs.next()) {
-                IncidenciasModel incidencia = new IncidenciasModel(sql, null, sql, sql, null, sql);
-                incidencia.setId_incidencia(rs.getInt("id_incidencia"));
+                IncidenciasModel incidencia = new IncidenciasModel(0, null, sql, sql, null, sql);
+                incidencia.setIdIncidencia(rs.getInt("id_incidencia"));
                 incidencia.setFechaCreacion(rs.getDate("FechaCreacion"));
                 incidencia.setDescripcion(rs.getString("descripcion"));
                 incidencia.setTitulo(rs.getString("Titulo"));
@@ -65,24 +64,17 @@ public class DataOperationsUtils {
 
                 }
 
-                System.out.println("Listado de incidencias:" + incidencias.size());
-                /* 
-            } cath(SQLException exception) {
+                System.out.println("Listado de incidencias:" + incidencias.toString());
+                
+            } catch(SQLException e) {
+                System.err.println("Error al listar las incidencias: " + e.getMessage());
                     e.printStackTrace();
                 }
-                */
+                
 
                 return incidencias;                 
                 
                 }
-
-
-
-
-
-
-
-
 
 
             /*

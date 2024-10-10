@@ -3,14 +3,14 @@ package com.factoriaf5.model;
 import java.util.Date;
 
 public class IncidenciasModel {
-private String idIncidencia;
+private int idIncidencia;
 private Date fechaCreacion;
 private String descripcion;
 private String titulo;
 private Date fechaCierre;
 private String estado;
 
-public IncidenciasModel(String idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado){
+public IncidenciasModel(int idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado){
     this.idIncidencia = idIncidencia;
     this.fechaCreacion = fechaCreacion;
     this.descripcion = descripcion;
@@ -20,11 +20,16 @@ public IncidenciasModel(String idIncidencia, Date fechaCreacion, String descripc
 }
 
 
-public String getIdIncidencia(){
+
+//public IncidenciasModel() {
+  
+
+
+public int getIdIncidencia(){
     return idIncidencia;
 }
 
-public void setIdIncidencia(String idIncidencia){
+public void setIdIncidencia(int idIncidencia){
     this.idIncidencia = idIncidencia;
 }
 
@@ -81,16 +86,10 @@ public String toString() {
             '}';
 }
 
+}
 
-public void setIdIncidencia(int int1) {
-    // TODO Auto-generated method stub
+/*public void setIdIncidencia(int int) {
+    
     throw new UnsupportedOperationException("Unimplemented method 'setIdIncidencia'");
-}
+} */
 
-
-public void setId_incidencia(int int1) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'setId_incidencia'");
-}
-
-}

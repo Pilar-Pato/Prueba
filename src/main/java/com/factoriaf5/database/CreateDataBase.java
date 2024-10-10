@@ -43,11 +43,11 @@ public class CreateDataBase {
                 + "id_incidencia INT PRIMARY KEY AUTO_INCREMENT, "
                 + "id_cliente INT NOT NULL, "
                 + "id_tecnico INT, "
-                + "fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "
+                + "fechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "
                 + "titulo VARCHAR(255) NOT NULL, "
                 + "descripcion TEXT NOT NULL, "
                 + "estado VARCHAR(50) DEFAULT 'Pendiente', "
-                + "fecha_cierre TIMESTAMP NULL, "
+                + "fechaCierre TIMESTAMP NULL, "
                 + "FOREIGN KEY (id_cliente) REFERENCES Clientes(id_cliente) ON DELETE CASCADE, "
                 + "FOREIGN KEY (id_tecnico) REFERENCES Tecnicos(id_tecnico) ON DELETE SET NULL)";
 
