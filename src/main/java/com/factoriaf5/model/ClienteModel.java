@@ -37,7 +37,10 @@ public void setTelefono(int telefono) {
 }
 
 }
+<<<<<<< HEAD
 
 
 
     
+=======
+>>>>>>> cb2aacdf3fc6b0848ab78ac4ef94e0a40e6f276f

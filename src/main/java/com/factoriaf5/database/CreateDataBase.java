@@ -64,7 +64,10 @@ public class CreateDataBase {
         }
     }
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> cb2aacdf3fc6b0848ab78ac4ef94e0a40e6f276f
     public static void insertInitialData() {
         DataOperationsUtils.insertUser("Cristina", "1234", true);
         System.out.println("Usuario Cristina insertado correctamente y su password ");
