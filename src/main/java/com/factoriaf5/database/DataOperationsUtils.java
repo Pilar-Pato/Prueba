@@ -41,7 +41,7 @@ public class DataOperationsUtils {
             System.err.println("Error insertando incidencia: " + e.getMessage());
         }
     }
-    // Obtener todas las personas de la base de datos
+    
     public static List<IncidenciasModel> getAllIncidencias() {
         List<IncidenciasModel> incidencias = new ArrayList<>();
         String sql = "SELECT * FROM Incidencias";
@@ -49,8 +49,7 @@ public class DataOperationsUtils {
             PreparedStatement pstmt = connection.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery()) {
 
-    // String idIncidencia, Date fechaCreacion, String descripcion, String titulo, Date fechaCierre, String estado
-
+    
             while (rs.next()) {
                 IncidenciasModel incidencia = new IncidenciasModel(0, null, sql, sql, null, sql);
                 incidencia.setIdIncidencia(rs.getInt("id_incidencia"));

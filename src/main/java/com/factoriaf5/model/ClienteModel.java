@@ -40,10 +40,4 @@ public void setTelefono(int telefono) {
 
 
 
-    //public static void createClientesTable() {
-        //String sqlCreateTableClientes = "CREATE TABLE IF NOT EXISTS Clientes ("
-          //      + "id_cliente INT PRIMARY KEY AUTO_INCREMENT, "
-          //      + "direccion VARCHAR(255), "
-          //      + "telefono VARCHAR(20), "
-          //      + "id_user INT, "
-          //      + "FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE CASCADE)";
+    

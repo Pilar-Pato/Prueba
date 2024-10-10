@@ -4,7 +4,7 @@ public class TecnicoModel extends UserModel{
     private int id_tecnico;
     private String cargo;
     private String correo;
-// private int id_user : no estamos seguras de declarar los atributos que ya están en la clase madre.
+
     
         public TecnicoModel(int id_user, String nombre_user, int password, int id_tecnico, String cargo, String correo) {
             super(id_user, nombre_user, password);

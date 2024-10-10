@@ -64,14 +64,7 @@ public class CreateDataBase {
         }
     }
 
-    /* public static void main(String[] args) {
-        createUsersTable();
-        createTecnicosTable();
-        createClientesTable();
-        createIncidenciasTable();
-
-        insertInitialData();
-    }*/
+    
     public static void insertInitialData() {
         DataOperationsUtils.insertUser("Cristina", "1234", true);
         System.out.println("Usuario Cristina insertado correctamente y su password ");
