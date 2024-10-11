@@ -16,7 +16,7 @@ Java 21 SE
 
 Se añade la Historia del Cliente :[Historia del Cliente.pdf](https://github.com/user-attachments/files/17270202/Historia.del.Cliente.pdf)
 
-Se añade el Diagrama de Flujo:
+Se añade el Diagrama de Flujo:https://www.canva.com/design/DAGSUb5Kl6M/Y7Y5SK66fC4lrHvFKWo1uw/edit?utm_content=DAGSUb5Kl6M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
 Se añade el Diagrama UML ![UML](https://github.com/user-attachments/assets/089df4a3-a7b6-4c48-96ec-112a0dadfdbd)
 
