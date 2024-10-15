@@ -18,6 +18,10 @@ Se añade la Historia del Cliente :[Historia del Cliente.pdf](https://github.com
 
 Se añade el Diagrama de Flujo:https://www.canva.com/design/DAGSUb5Kl6M/Y7Y5SK66fC4lrHvFKWo1uw/edit?utm_content=DAGSUb5Kl6M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
+
+![Screenshot_20241015_223704_com_canva_editor_EditorXV2Activity](https://github.com/user-attachments/assets/b9572b9c-d55c-4ac6-85df-b7b686ba71b0)
+
+
 Se añade el Diagrama UML ![UML](https://github.com/user-attachments/assets/089df4a3-a7b6-4c48-96ec-112a0dadfdbd)
 
 Presentación del proyecto: https://www.canva.com/design/DAGSUK3ddoE/E8slrlwcT_vI75S0vlzUow/edit?utm_content=DAGSUK3ddoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
