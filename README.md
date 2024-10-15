@@ -22,3 +22,7 @@ Se añade el Diagrama UML ![UML](https://github.com/user-attachments/assets/089d
 
 Presentación del proyecto: https://www.canva.com/design/DAGSUK3ddoE/E8slrlwcT_vI75S0vlzUow/edit?utm_content=DAGSUK3ddoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+Colaboradoras en el Proyecto: https://github.com/alejandra-sierra
+                              https://github.com/lara-gs
+                              https://github.com/NaudelynLucena/NaudelynLucena
+                              
